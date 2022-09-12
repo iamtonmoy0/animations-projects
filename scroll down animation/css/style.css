@@ -1,0 +1,46 @@
+* {
+    background-color: royalblue;
+    box-sizing: border-box;
+}
+
+main {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 0;
+}
+
+main h1 {
+    text-transform: capitalize;
+    color: aliceblue;
+}
+
+.box {
+    height: 200px;
+    width: 300px;
+    background-color: aquamarine;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 20px;
+    border-radius: 5%;
+    border: 3px solid tomato;
+    text-transform: uppercase;
+    transform: translateX(300%);
+    transition: transform 1s ease;
+}
+
+.box h1 {
+    background: transparent;
+    color: black;
+}
+
+.box:nth-last-child(even) {
+    transform: translateX(-300%);
+}
+
+.box.show {
+    transform: translateX(0);
+}
