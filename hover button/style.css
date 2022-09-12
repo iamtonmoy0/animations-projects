@@ -1,0 +1,39 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: rgb(8, 6, 6);
+}
+
+a {
+    text-decoration: none;
+    font-family: sans-serif;
+    color: azure;
+    font-size: 40px;
+    border: 4px solid rgb(244, 244, 244);
+    padding: 30px 70px;
+    transition: all 1s;
+    position: relative;
+    overflow: hidden;
+}
+
+a:hover {
+    background-color: tomato;
+}
+
+a::before {
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    background-color: aliceblue;
+    position: absolute;
+    transform: translateX(-100%) rotate(80deg);
+    transition: all 1s;
+}
+
+a:hover::before {
+    transform: translate(100%) rotate(-140deg);
+}
