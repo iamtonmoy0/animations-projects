@@ -1,4 +1,4 @@
-###2px Border navbar animation
+### 2px Border navbar animation
 
 
 
