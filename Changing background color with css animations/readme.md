@@ -1,1 +1,1 @@
-### Changing background color with css animations
+### Changing background color with css
